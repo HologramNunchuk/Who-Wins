@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.styles {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.vs {
+  margin-top: 4vh;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+body {
+  background-color: #222;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('./assets/images/ice_lightning.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 780px) {
+  .styles {
+    display: block;
+    width: 100%;
+  }
+
+  .vs {
+    margin-top: 5vh;
+    display: block;
+  }
+
 }
